@@ -1,5 +1,5 @@
 programa{
-	funcao inteiro fatorar(inteiro fat){
+	funcao inteiro calcularFatorial(inteiro fat){
 		inteiro i
 		
 		escreva(fat)
@@ -94,7 +94,7 @@ programa{
 					inteiro fat
 					escreva("Digite um número para saber o seu fatorial: ")
 					leia(fat)
-					resultado = fatorar(fat)
+					resultado = calcularFatorial(fat)
 					escreva(resultado)
 					escreva("\nGotaria de realizar outra operação? [S/N]")
 					leia(opcao2)
@@ -215,7 +215,7 @@ programa{
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 1020; 
+ * @POSICAO-CURSOR = 1963; 
  * @DOBRAMENTO-CODIGO = [1, 14, 30];
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
