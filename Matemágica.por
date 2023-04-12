@@ -1,6 +1,5 @@
-programa
-{
-	funcao inteiro fatorar(inteiro fat){
+programa{
+	funcao inteiro fatorar(inteiro fat){
 		inteiro i
 		
 		escreva(fat)
@@ -77,13 +76,10 @@ programa
 		retorne seno
 	}
 	
-	funcao inicio()
-	{
+	funcao inicio(){
 		inteiro opcao = 0, n1, n2, soma, resultado
 		cadeia  opcao2 = ""
-	
 		escreva("----------------- MATEMÁGICA -----------------\n\n")
-
 		faca{
 			escreva("1 - Calcular Fatorial de um número\n")
 			escreva("2 - Exibir o n-ésimo termo da sequencia de Fibonacci\n")
@@ -96,7 +92,6 @@ programa
 			escolha(opcao){
 				caso 1:
 					inteiro fat
-					
 					escreva("Digite um número para saber o seu fatorial: ")
 					leia(fat)
 					resultado = fatorar(fat)
@@ -104,11 +99,9 @@ programa
 					escreva("\nGotaria de realizar outra operação? [S/N]")
 					leia(opcao2)
 					limpa()
-					escreva("Obrigado por usar MATEMÁGICA. Volte sempre!")
 					pare	
 				caso 2:
 					inteiro termo
-				
 					escreva("Digite o termo desejado da sequência Fibonacci: ")
 					leia(termo)
 					resultado = calcularFibonacci(termo)
@@ -116,11 +109,9 @@ programa
 					escreva("\nGotaria de realizar outra operação? [S/N]")
 					leia(opcao2)
 					limpa()
-					escreva("Obrigado por usar MATEMÁGICA. Volte sempre!")
 					pare
 				caso 3:
 					inteiro base, expoente
-	
 					escreva("Informe os termos para calcular potência: \n")
 					escreva("Base: ")
 					leia(base)
@@ -131,12 +122,10 @@ programa
 					escreva("\nGotaria de realizar outra operação? [S/N]")
 					leia(opcao2)
 					limpa()
-					escreva("Obrigado por usar MATEMÁGICA. Volte sempre!")
 					pare
 				caso 4:
 					real  graus, rad, seno, adendos
 					const real PI = 3.14159265358979323846
-					
 					faca{
 						escreva("Calcular Seno\n")
 						escreva("1 - Calcular seno em graus\n")
@@ -144,14 +133,13 @@ programa
 						escreva("3 - Sair\n")
 						leia(opcao)
 						limpa()
-						
 						escolha (opcao){
 							caso 1 :
 								escreva("informe o ângulo do seno em graus: ")
 								leia(graus)
 								escreva("Informe um limite de adendos no parâmetro entre 4 e 6: ")
 								leia(adendos)
-								
+								limpa()
 								se(adendos <= 6 e adendos >= 4){
 									adendos = adendos
 								} senao se(adendos > 6){
@@ -171,7 +159,6 @@ programa
 								} senao {
 									seno = calcularSeno(graus,adendos)
 								}
-								limpa()
 								escreva("O seno de ", graus," graus é: ",seno,"\n")
 								escreva("\nGotaria de realizar outra operação de seno? [S/N]")
 								leia(opcao2)
@@ -182,6 +169,7 @@ programa
 								leia(rad)
 								escreva("Informe um limite de adendos no parâmetro entre 4 e 6: ")
 								leia(adendos)
+								limpa()
 								se(adendos <= 6 e adendos >= 4){
 									adendos = adendos
 								} senao se(adendos > 6){
@@ -193,7 +181,6 @@ programa
 								}
 								graus = (rad * 180) / PI
 								seno = calcularSeno(graus,adendos)
-								limpa()
 								escreva("O seno de ", rad," radianos é: ",seno,"\n")
 								escreva("\nGotaria de realizar outra operação de seno? [S/N]")
 								leia(opcao2)
@@ -208,15 +195,11 @@ programa
 								opcao2 = "S"
 							}
 					}enquanto(opcao2 == "S" ou opcao2 == "s")
-					
-					escreva("\nGotaria de realizar outra operação? [S/N]")
+					escreva("\nGostaria de realizar outra operação? [S/N]")
 					leia(opcao2)
 					limpa()
-					escreva("Obrigado por usar MATEMÁGICA. Volte sempre!")
 					pare
 				caso 5:
-					limpa()
-					escreva("Obrigado por usar MATEMÁGICA. Volte sempre!")
 					opcao2 = ""
 					pare
 				caso contrario:
@@ -224,6 +207,7 @@ programa
 					opcao2 = "S"
 			}
 		}enquanto(opcao2 == "S" ou opcao2 == "s")
+		escreva("Obrigado por usar MATEMÁGICA. Volte sempre!")
 	}
 }
 /* $$$ Portugol Studio $$$ 
@@ -231,8 +215,8 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 4754; 
- * @DOBRAMENTO-CODIGO = [2, 15, 31, 45];
+ * @POSICAO-CURSOR = 1020; 
+ * @DOBRAMENTO-CODIGO = [1, 14, 30];
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
